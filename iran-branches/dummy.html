@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branch Locator UI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://developer.wordpress.org/wp-includes/css/dashicons.min.css">
+</head>
+<body>
+
+<div class="branch-search">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+    </svg>
+    <input type="text" id="branch-search-input" placeholder="جستجوی نمایندگی (شهر - محله - اسم نمایندگی و...)">
+</div>
+
+<div class="province-filter">
+    <select id="province-select">
+        <option value="">انتخاب استان</option>
+        <option value="tehran">Tehran</option>
+        <option value="tabriz">Tabriz</option>
+    </select>
+</div>
+
+<div class="iran-branches-container">
+    <div class="province-group">
+        <h2 class="province-title">Tehran</h2>
+
+        <div class="branch-accordion">
+            <div class="branch-header">Tehran - Jomhouri</div>
+            <div class="branch-content">
+                <div class="branch-content-inner">
+                    <p class="branch-info-line"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16"><path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z"/></svg> Sabzevari Tak Co.</p>
+                    <p class="branch-info-line"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/></svg> 02166468885</p>
+                    <p class="branch-info-line"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/></svg> Jomhouri Eslami Ave, Daneshgah crossroad, P. 1146, Kachiran Central Showroom</p>
+                    <p class="branch-routing">مسیریابی: 
+                        <a href="#" target="_blank"><img src="images/google-maps.png" alt="Google Maps"></a>
+                        <a href="#" target="_blank"><img src="images/waze.png" alt="Waze"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="branch-accordion">
+            <div class="branch-header">Tehran - Shoush</div>
+            <div class="branch-content">
+                <div class="branch-content-inner">
+                    <p><span class="dashicons dashicons-store"></span> Branch Name 2</p>
+                    <p><span class="dashicons dashicons-phone"></span> 123456789</p>
+                    <p><span class="dashicons dashicons-location"></span> Shoush Street, Tehran</p>
+                    <p class="branch-routing">مسیریابی: 
+                        <a href="#" target="_blank"><img src="images/google-maps.png" alt="Google Maps"></a>
+                        <a href="#" target="_blank"><img src="images/waze.png" alt="Waze"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="province-group">
+        <h2 class="province-title">Tabriz</h2>
+
+        <div class="branch-accordion">
+            <div class="branch-header">Tabriz - Central</div>
+            <div class="branch-content">
+                <div class="branch-content-inner">
+                    <p><span class="dashicons dashicons-store"></span> Branch Name 3</p>
+                    <p><span class="dashicons dashicons-phone"></span> 987654321</p>
+                    <p><span class="dashicons dashicons-location"></span> Central Street, Tabriz</p>
+                    <p class="branch-routing">مسیریابی: 
+                        <a href="#" target="_blank"><img src="images/google-maps.png" alt="Google Maps"></a>
+                        <a href="#" target="_blank"><img src="images/waze.png" alt="Waze"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="pagination-container"></div>
+<div id="no-results-message" style="display: none;">No results found.</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
