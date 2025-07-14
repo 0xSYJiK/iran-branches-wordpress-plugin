@@ -7,7 +7,15 @@
 
 This is a cool and handy plugin for managing and displaying a list of your company's branches! 🏢 It's specially designed for use in Iran and is super easy to work with. You can categorize branches by province and show your users a neat, searchable list.
 
-**Friendly Note:** This entire plugin was created with the help of Google's Gemini CLI AI assistant! 🤖
+**Note:** This entire plugin was created with the help of Google's Gemini CLI AI assistant and by an official Wibe coder! 🤖
+
+**Disclaimer:** Use this plugin at your own risk.
+
+##  Live Demo
+
+You can see a live demo of this plugin at [bonhorse.ir/branches](https://bonhorse.ir/branches/).
+
+**Note:** The map of Iran on the left side of the demo page is not included in this plugin; it is a separate plugin.
 
 ## ✨ Features
 
@@ -29,7 +37,7 @@ This is a cool and handy plugin for managing and displaying a list of your compa
 
 ## 🚀 Installation
 
-1.  **Download:** Get the plugin from GitHub (Code > Download ZIP).
+1.  **Download:** Download the latest version of the plugin from the [Releases page](https://github.com/0xSYJiK/iran-branches-wordpress-plugin/releases).
 2.  **Upload to WordPress:**
     *   In your WordPress admin, go to `Plugins` > `Add New`.
     *   Click the `Upload Plugin` button.
