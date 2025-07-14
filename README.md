@@ -1,77 +1,81 @@
-# Iran Branches WordPress Plugin
 
-A simple but powerful WordPress plugin for managing and displaying a list of company branches, specifically designed for use in Iran. It allows for easy organization of branches by province and provides a clean, searchable, and user-friendly interface on the front end.
+# 🇮🇷 پلاگین وردپرس نمایش لیست شعب ایران 🇮🇷
 
-**Note:** This entire plugin was created with the assistance of Google's Gemini.
+<p align="center">
+  <strong><a href="README-en_US.md">English</a></strong> | <strong>فارسی</strong>
+</p>
 
-## Features
+یه پلاگین باحال و کاربردی برای مدیریت و نمایش لیست شعب شرکت شما! 🏢 این پلاگین مخصوصاً برای ما ایرانی‌ها طراحی شده و کار باهاش خیلی راحته. می‌تونید شعب رو بر اساس استان دسته‌بندی کنید و یه لیست خوشگل و قابل جستجو به کاربراتون نشون بدید.
 
-*   **Custom "Branch" Post Type:** Easily add, edit, and manage your branches.
-*   **"Province" Taxonomy:** Categorize branches by province for better organization.
-*   **Manual & Automatic Sorting:**
-    *   Set a custom display order for both provinces and individual branches.
-    *   Items without a specified order will automatically be sorted alphabetically.
-*   **Multi-Number Support:**
-    *   Add multiple phone numbers to a single branch, separated by commas.
-    *   Each number is automatically converted to Persian numerals.
-    *   All numbers are formatted as clickable `tel:` links for easy dialing on mobile devices.
-*   **Easy Navigation:** Include links for Google Maps and Waze/Neshan for each branch.
-*   **Search & Filter:**
-    *   A live search bar allows users to instantly find branches by name, city, or any other detail.
-    *   A dropdown menu lets users filter branches by province.
-*   **Accordion Display:** A clean and modern accordion interface keeps the branch list tidy and easy to navigate.
-*   **Simple Shortcode:** Use a single shortcode to display the entire branch system on any page or post.
+**نکته:** کل این پلاگین با کمک دستیار هوش مصنوعی Gemini CLI گوگل ساخته شده! 🤖
 
-## Installation
+## ✨ ویژگی‌ها
 
-1.  **Download:** Download the plugin from the GitHub repository by clicking "Code" > "Download ZIP".
-2.  **Upload to WordPress:**
-    *   In your WordPress admin panel, navigate to `Plugins` > `Add New`.
-    *   Click the `Upload Plugin` button at the top of the page.
-    *   Select the `.zip` file you downloaded and click `Install Now`.
-3.  **Activate:** Once the installation is complete, click `Activate Plugin`.
+*   **نوع پست سفارشی "شعبه":** خیلی راحت شعبتون رو اضافه، ویرایش و مدیریت کنید.
+*   **طبقه‌بندی "استان":** شعب رو بر اساس استان دسته‌بندی کنید تا همه چی مرتب باشه.
+*   **مرتب‌سازی دستی و خودکار:**
+    *   برای استان‌ها و شعبه‌ها ترتیب نمایش دلخواه بذارید.
+    *   اونایی که ترتیب ندارن، خودکار بر اساس الفبا مرتب میشن.
+*   **پشتیبانی از چند شماره تلفن:**
+    *   برای هر شعبه چندتا شماره تلفن وارد کنید (فقط با کاما جداشون کنید).
+    *   شماره‌ها خودکار فارسی میشن.
+    *   همه‌ی شماره‌ها لینک‌دار میشن (`tel:`) تا کاربرا با یه کلیک تماس بگیرن. 📞
+*   **مسیریابی آسون:** لینک گوگل مپ و ویز/نشان رو برای هر شعبه بذارید تا همه راحت پیداتون کنن. 🗺️
+*   **جستجو و فیلتر:**
+    *   نوار جستجوی زنده برای پیدا کردن سریع شعبه بر اساس اسم، شهر و...
+    *   منوی کشویی برای فیلتر کردن شعب بر اساس استان.
+*   **نمایش آکاردئونی:** لیست شعب به صورت آکاردئونی نمایش داده میشه که هم خوشگله و هم جمع و جور.
+*   **شورت‌کد ساده:** فقط با یه شورت‌کد `[iran_branches]` کل این سیستم رو به هر صفحه‌ای که خواستید اضافه کنید.
 
-## How to Use
+## 🚀 نصب و راه‌اندازی
 
-### 1. Add Provinces
+۱.  **دانلود:** پلاگین رو از گیت‌هاب دانلود کنید (Code > Download ZIP).
+۲.  **بارگذاری در وردپرس:**
+    *   توی پنل وردپرس برید به `افزونه‌ها` > `افزودن`.
+    *   دکمه `بارگذاری افزونه` رو بزنید.
+    *   فایل `.zip` رو انتخاب و نصب کنید.
+۳.  **فعال‌سازی:** بعد از نصب، افزونه رو فعال کنید.
 
-Before adding individual branches, it's best to set up the provinces they belong to.
+## 🛠️ چطوری استفاده کنیم؟
 
-1.  In the WordPress admin menu, go to `Branches` > `Provinces`.
-2.  Add your desired provinces, just like you would with standard post categories.
-3.  **To set a custom order,** enter a number in the "Order" field. Provinces with lower numbers will appear first in the list.
+### ۱. افزودن استان‌ها
 
-### 2. Add a New Branch
+اول از همه استان‌ها رو اضافه کنید:
 
-1.  Navigate to `Branches` > `Add New`.
-2.  **Title:** Enter the primary name of the branch (e.g., "Central Branch").
-3.  **Branch Details:** In the main content area, you'll find the "Branch Details" box:
-    *   **Branch Name:** A more specific name or title for the branch.
-    *   **Phone Number:** Enter one or more phone numbers, separated by commas (e.g., `021-88888888, 09123456789`).
-    *   **Address:** The full address of the branch.
-    *   **Google Maps Link:** The full URL for the branch's location on Google Maps.
-    *   **Waze/Balad Link:** The full URL for Waze, Neshan, or Balad.
-4.  **Province:** In the right-hand sidebar, select the correct province for the branch.
-5.  **Order:** In the "Page Attributes" box (also in the sidebar), enter a number in the "Order" field to control the branch's position within its province.
+1.  از منوی وردپرس برید به `شعب` > `استان‌ها`.
+2.  استان‌های مورد نظرتون رو اضافه کنید.
+3.  **برای ترتیب دلخواه،** توی فیلد "ترتیب" یه عدد بذارید (عدد کمتر = بالاتر).
 
-### 3. Display on Your Website
+### ۲. افزودن شعبه جدید
 
-To display the branch locator on a page:
+1.  برید به `شعب` > `افزودن جدید`.
+2.  **عنوان:** اسم اصلی شعبه رو بنویسید.
+3.  **جزئیات شعبه:** توی کادر "جزئیات شعبه" اطلاعات رو پر کنید:
+    *   **نام شعبه:** یه اسم کامل‌تر برای شعبه.
+    *   **شماره تلفن:** شماره‌ها رو با کاما جدا کنید (مثلاً: `021-88888888, 09123456789`).
+    *   **آدرس:** آدرس کامل شعبه.
+    *   **لینک گوگل مپ:** لینک کامل گوگل مپ شعبه.
+    *   **لینک ویز/بلد:** لینک کامل ویز، نشان یا بلد.
+4.  **استان:** از نوار کناری استان شعبه رو انتخاب کنید.
+5.  **ترتیب:** توی کادر "ویژگی‌های برگه" یه عدد برای ترتیب نمایش شعبه توی استانش بذارید.
 
-1.  Create a new page or edit an existing one (`Pages` > `Add New`).
-2.  Add a `Shortcode` block to the page content.
-3.  Insert the following shortcode: `[iran_branches]`
-4.  Publish or update the page. The full branch list, search bar, and province filter will now be visible on the front end.
+### ۳. نمایش در سایت
 
-## File Structure
+1.  یه برگه جدید بسازید یا یه برگه رو ویرایش کنید.
+2.  بلوک `شورت‌کد` رو اضافه کنید.
+3.  این شورت‌کد رو توش بذارید: `[iran_branches]`
+4.  برگه رو منتشر کنید و تمام! 🎉
+
+## 📂 ساختار فایل‌ها
 
 ```
 /iran-branches/
-|-- iran-branches.php   # The main plugin file containing all PHP functions.
+|-- iran-branches.php   # فایل اصلی پلاگین
 |-- /js/
-|   |-- main.js         # Handles the front-end interactivity (accordion, search, etc.).
+|   |-- main.js         # کدهای جاوااسکریپت برای جستجو و آکاردئون
 |-- /images/
-|   |-- google-maps.png # Icon for Google Maps links.
-|   |-- waze.png        # Icon for Waze/Neshan links.
-|-- README.md           # This file.
+|   |-- google-maps.png # آیکون گوگل مپ
+|   |-- waze.png        # آیکون ویز/نشان
+|-- README.md           # همین فایل راهنما
+|-- README-en_US.md     # فایل راهنمای انگلیسی
 ```
